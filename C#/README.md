@@ -1,8 +1,60 @@
 # C\# Learning Library
-C\# is part of .Net Framework and is use to write .Net Applications.
+C\# is part of .Net Framework and is use to write .Net Applications. **_This is not the full study reference for C\# Programming Language. It is a personal study key-points for myself._** 
 
 ### About .Net Framework
 .Net is use to create **_Windows Application_**, **_Web Application_**, and **_Web Services_**. _The .Net framework applications are multi-platform applications. The framework has been designed in such a way that it can be used from any of the following languages: C#, C++, Visual Basic, Jscript, COBOL, etc. All these languages can access the framework as well as communicate with each other._ The components of .Net Framework can be found [here](http://www.tutorialspoint.com/csharp/csharp_environment_setup.htm).
+
+### Data Types in C\#
+#### Reference Type
+##### Object Type
+The ultimate base class for all data types in C# Common Type System (CTS). The object types can be assigned values of any other types, **value types**, **reference types**, **predefined** or **user-defined** types.
+```cs
+object obj;
+obj = 100; // this is boxing
+```
+
+##### Dynamic Type
+Dynamic types are similar to object types except that **_type checking for object type variables takes place at compile time_**, whereas that for the **_dynamic type variables takes place at run time_**.
+```cs
+dynamic <variable_name> = value;
+dynamic d = 20;	// example
+```
+
+##### String Type
+Allows you to assign any string values to a variable.
+```cs
+String str = "Tutorials Point";
+@"Tutorials Point";
+```
+
+### Type Conversion
+Type conversion is converting one type of data to another type. It is also known as Type Casting. In C#, type casting has two forms:
+**Implicit type conversion** - These conversions are performed by C# in a type-safe manner.
+**Explicit type conversion** - These conversions are done explicitly by users using the pre-defined functions. Explicit conversions require a cast operator.
+
+### Encapsulation
+**Abstraction** allows making relevant information visible. **Encapsulation** enables a programmer to implement the desired level of abstraction.
+An **access specifier** defines the scope and visibility of a class member.
+
+> Public - allows a class to expose its member variables and member functions to other functions and objects. Any public member can be accessed from outside the class.
+
+> Private - allows a class to hide its member variables and member functions from other functions and objects. Only functions of the same class can access its private members. Even an instance of a class cannot access its private members.
+
+> Protected - allows a child class to access the member variables and member functions of its base class.
+
+> Internal - allows a class to expose its member variables and member functions to other functions and objects in the current assembly.
+
+> Protected internal - allows a class to hide its member variables and member functions from other class objects and functions, except a child class within the same application.
+
+### Methods
+A method is a group of statements that together perform a task.
+#### Defining Methods in C#
+```cs
+<Access Specifier> <Return Type> <Method Name>(Parameter List)
+{
+   Method Body
+}
+```
 
 ## Questions
 ### Difference between structure, object and array.
