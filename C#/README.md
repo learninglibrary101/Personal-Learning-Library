@@ -1,4 +1,4 @@
-sta# C\# Learning Library
+# C\# Learning Library
 C\# is part of .Net Framework and is use to write .Net Applications. **_This is not the full study reference for C\# Programming Language. It is a personal study key-points for myself._**
 
 
