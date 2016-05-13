@@ -1,5 +1,5 @@
-# C\# Learning Library
-C\# is part of .Net Framework and is use to write .Net Applications. **_This is not the full study reference for C\# Programming Language. It is a personal study key-points for myself._** 
+sta# C\# Learning Library
+C\# is part of .Net Framework and is use to write .Net Applications. **_This is not the full study reference for C\# Programming Language. It is a personal study key-points for myself._**
 
 
 ### About .Net Framework
@@ -65,12 +65,51 @@ A method is a group of statements that together perform a task.
 }
 ```
 
+## Nullables
+The nullable type is a special data type, to which you can assign normal range of values as well as null values. For example, you can store any value from -2,147,483,648 to 2,147,483,647 or null in a Nullable<Int32> variable. Similarly, you can assign true, false, or null in a Nullable<bool> variable. Syntax for declaring a nullable type is as follows:
+`< data_type> ? <variable_name> = null;`
+
+### Null Coalescing Operator
+Null Coalescing operator is used with the nullable value types and reference types. It is used for converting an operand to the type of another nullable (or not) value type operand, where an implicit conversion is possible. If the value of the first operand is null, then the operator returns the value of the second operand, otherwise it returns the value of the first operand.
+
+## Array
+An array is a collection of variables of the same type stored at contiguous memory locations. To declare an array in C#, you can use the following syntax:
+```cs
+datatype[] arrayName;
+double[] balance = new double[10];   // initializing the array
+balance[0] = 4500.0;                 // assigning value to an array
+
+/* Other examples */
+double[] balance = { 2340.0, 4523.69, 3421.0};
+int [] marks = new int[5]  { 99,  98, 92, 97, 95};
+int [] marks = new int[]  { 99,  98, 92, 97, 95};
+int [] marks = new int[]  { 99,  98, 92, 97, 95};
+int[] score = marks;                // can copy an array into another array
+```
+
+## Classes
+Objects are instances of a class
+
+### Class Constructor
+A class constructor is a special member function of a class that is executed whenever we create new objects of that class.
+
+### Parameterized Constructors
+This technique helps you to assign initial value to an object at the time of its creation.
+
+### Destructor
+A destructor is a special member function of a class that is executed whenever an object of its class goes out of scope. A destructor has exactly the same name as that of the class with a prefixed tilde (~) and it can neither return a value nor can it take any parameters.
+
+### Static Member in a class
+If a member of a class as static, **it means no matter how many objects of the class are created, there is only one copy of the static member**.
+
+### Static Function
+**Such functions can access only static variables**. The static functions exist even before the object is created.
 
 ## Questions
 ### Difference between structure, object and array.
-- **Struct** is a **structured piece of data**. 
+- **Struct** is a **structured piece of data**.
 - **Object** is an instance of a class. Since classes can be used to represent classic data structures such as arrays, hash maps, trees, etc, you often see them as the individual things within a block of structured data.
-- **Array** is a block of unstructured data. 
+- **Array** is a block of unstructured data.
 
 > - Use an array as a place to put a large group of things with no other inherent structure or hierarchy, such as "all receipts from January" or "everything I bought in Denmark"
 
