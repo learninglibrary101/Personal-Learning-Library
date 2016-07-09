@@ -17,6 +17,11 @@ http://stark-fog-398.herokuapp.com/ | https://git.heroku.com/stark-fog-398.git
 Git remote heroku added
 ```
 
+#### Add to Git
+```
+$ git add .
+$ git commit -m "My Heroku App"
+```
 
 #### Steps to deply Meteor
 `$ heroku create`
@@ -26,3 +31,5 @@ Git remote heroku added
 `$ heroku config:set ROOT_URL="https://<appname>.herokuapp.com"`
 
 `$ heroku config:set MONGO_URL="mongodb://<dbuser>:<dbpassword>@example.mlab.com:88888/your-meteor-app"`
+
+`$ git push heroku master`
