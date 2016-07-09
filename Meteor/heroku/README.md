@@ -23,6 +23,9 @@ $ git add .
 $ git commit -m "My Heroku App"
 ```
 
+#### Connect to remote repo
+`$ heroku git:remote -a project # where project os the name pf your heroku project`
+
 #### Steps to deply Meteor
 `$ heroku create`
 
