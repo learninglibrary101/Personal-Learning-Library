@@ -8,8 +8,10 @@ Predix is a PaaS, that provides developers to rapidly deploy and elastically sca
 
  Predix provide **unified connectivity** and device management across any type of device (no matter which vendor and protocol), Predix includes an embedded software stack (downloadable) called **Predix Machine**.
 
+## API Endpoint
+`$ cf login -a https://api.system.aws-usw02-pr.ice.predix.io` or https://api.system.asv-pr.ice.predix.io
 
-#### Microservices
+## Microservices
 Microservices, as listed in the Predix Catalog, fall broadly into the following categories:
 - Data management
 - Analytics
@@ -17,3 +19,7 @@ Microservices, as listed in the Predix Catalog, fall broadly into the following 
 - App management
 - DevOps
 - Commercialization (BizOps)
+
+
+## To get started
+This [repo](https://github.com/PredixDev/predix-nodejs-starter) is great start for nodeJS + Predix.io
